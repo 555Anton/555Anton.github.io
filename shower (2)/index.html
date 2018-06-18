@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LRS (Learning Record Store)</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>LRS (Learning Record Store)</h1>
+		<p>хранилище учебных записей</p>
+	</header>
+
+	<section class="slide" id="cover">
+		<h2>LRS (Learning Record Store)</h2>
+		<p>Основана на стандарте нового поколения <a href="https://catalogue.normdocs.ru">xAPI</a></p>
+		<figure>
+			<img class="cover" src="pictures/cover.jpg" alt="Хранилище данных">
+			<figcaption class="white">
+				<a href="http://fiftyfootshadows.net/">© John Carey</a>
+			</figcaption>
+		</figure>
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+				}
+				#cover p a {
+					color:#FFF;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Что такое LRS?</h2>
+		<ol>
+			<li>Информация об учебной деятельности сохраняется в специальной базе — хранилище учебных записей LRS (learning record store).</li>
+			<li>LRS - Хранилища учебных записей (Learning Record Store). Особый тип программных решений, используемым в  сфере электронного обучения [Стандарты обслуживания ИТ-систем].</li>
+			<li>Хранилище учебных записей (learning record store, LRS), когда платформа аккумулирует учебные материалы, собранные из всех подключенных систем и приложений.</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>В чем его отличие от СДО (LMS)?</h2>
+		<p><strong>Learning Record Store (LRS)</strong> хранит записи об пользовательской активности. То есть по большому счёту LRS не заменяют LMS, а могут либо выступать их частью, либо вообще жить отдельной жизнью.</p>
+		<p><em>Tin Can API</em> позволяет отслеживать большое число учебных действий, а не просто завершение, успешность прохождения курса и полученный учащимся балл по тестам и заданиям.</p>
+	</section>
+
+	<section class="slide">
+		<h2>LRS как база данных</h2>
+		<p>Сюда сохраняются специфические xAPI-выражения (т.е. действия каждого учащегося). LRS на данный момент могут быть встроены непосредственно в LMS или могут существовать как самостоятельные продукты. СДО с поддержкой Tin Can API, т.е. фактически, со встроенным LRS, может работать и с более старым форматом SCORM.</p>
+	</section>
+
+<section class="slide" id="picture">
+		<p>По мере того, как происходит обучение через API, потоки активности отправляются и хранятся в LRSs.</p>
+		<figure>
+			<img class="cover" src="pictures/picture.jpg" alt="схематическое изображения подвода информации к LRS">
+		</figure>
+	</section>
+
+	<section class="slide">
+		<div class="columns two">
+			<p><strong>При использовании Tin Can всё, что делает учащийся в рамках учебного курса, сохраняется в виде выражений (функций).</strong> Эти выражения могут содержать следующее:</p>
+			<ol>
+			<li><em>Пользователь приступил к курсу.</em></li>
+			<li><em>Завершил тест.</em></li>
+			<li><em>Читает документ.</em></li>
+			<li><em>Участвует во встрече.</em></li>
+			<li><em>и т.д.</em></li>
+		</ol>
+			</p>
+		</div>
+	</section>
+
+<section class="slide" id="picture">
+		<figure>
+			<img class="cover" src="pictures/picture1.jpg" alt="Электронное обучение До и После">
+		</figure>
+	</section>
+
+<section class="slide" id="picture">
+		<p>
+		Данные, хранящиеся в LRS, могут быть доступны LMSs, средствам отчетности или другим Lrs, и могут хранить как отдельные обучающие записи так и целые транскрипты. LRS может ограничить круг тех, кто может читать и писать записи обучения, но не обязательно.
+		<p style="text-align: center;">
+		<img src="pictures/picture2.jpg" alt="Взаимодействие LRS и LMSs"/>	
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Как xAPI работает в оффлайн и мобильном обучении (в мобильных приложениях)?</h2>
+		<p>В оффлайн режиме Tin Can API хранит выражения xAPI в кэш браузера или мобильного приложения в то время, как пользователь проходит курс и генерирует опыт, то есть эти самые xAPI выражения. Как только устройство получает доступ в сеть Tin Can отправляет данные в LRS.</p>
+	</section>
+
+	<section class="slide" id="picture">
+		<p>
+		LRS может работать внутри LMS и работать в рамках возможностей этой LMS. LRS внутри LMS может доставлять данные об обучении / транскрипты другим Lrs, будь то внутри LMS или независимо от LMS.
+		<p style="text-align: center;">
+		<img src="pictures/picture3.jpg" alt="Работа LRS и LMSs"/>	
+		</p>
+	</section>
+
+
+
+	<section class="slide" id="see-more">
+		<h2 class="shout">
+			<img src="pictures/picture4.png" alt="изображение LRS">
+			<a href="https://scorm.com/about-us/request-a-demo">Установить demo LRS</a>
+		</h2>
+		<style>
+			#see-more h2 {
+				font-size: 100px
+			}
+
+			#see-more img {
+				width: 0.72em;
+				height: 0.72em;
+			}
+		</style>
+	</section>
+
+	<footer class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2018 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
